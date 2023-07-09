@@ -1,0 +1,20 @@
+{
+  "name": "torchandzen",
+  "private": true,
+  "scripts": {
+    "build": "tailwindcss -i ./static/css/input.css -o ./static/css/style.css --minify",
+    "watch": "tailwindcss -i ./static/css/input.css -o ./static/css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirodoht/torchandzen.git"
+  },
+  "homepage": "https://github.com/sirodoht/torchandzen#readme",
+  "bugs": {
+    "url": "https://github.com/sirodoht/torchandzen/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "3.3.2"
+  }
+}
