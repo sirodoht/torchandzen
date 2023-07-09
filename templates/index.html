@@ -7,55 +7,13 @@
 
         <title>Torch and Zen: Spend 3 weeks building an AI product</title>
 
-        <link rel="stylesheet" href="main.css">
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        fontFamily: {
-                            sans: [
-                                '"Grenette Trial"',
-                                'ui-sans-serif',
-                                'system-ui',
-                                '-apple-system',
-                                'BlinkMacSystemFont',
-                                '"Segoe UI"',
-                                'Roboto',
-                                '"Helvetica Neue"',
-                                'Arial',
-                                '"Noto Sans"',
-                                'sans-serif',
-                                '"Apple Color Emoji"',
-                                '"Segoe UI Emoji"',
-                                '"Segoe UI Symbol"',
-                                '"Noto Color Emoji"',
-                            ],
-                        },
-                        backgroundImage: {
-                            'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-                        },
-                        colors: {
-                            clifford: '#da373d',
-                            salvo: '#22c1c3',
-                        },
-                    }
-                }
-            }
-        </script>
-        <style type="text/tailwindcss">
-            @layer utilities {
-                .redd {
-                    background: red;
-                }
-            }
-        </style>
+        <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
         {% block content %}
 
         <header class="h-screen bg-gradient-radial from-teal-300 to-yellow-200 to-80%">
-            <div class="h-screen py-4 flex justify-center items-center flex-col justify-between bg-contain bg-no-repeat bg-center bg-[url('zen-circle.svg')]">
+            <div class="h-screen py-4 flex justify-center items-center flex-col justify-between bg-contain bg-no-repeat bg-center bg-[url('/img/zen-circle.svg')]">
                 <div></div>
 
                 <h1 class="font-semibold text-white pt-12 text-3xl sm:text-5xl">
@@ -91,7 +49,7 @@
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center mt-8">
                 <div class="w-[150px] mr-8">
-                    <img src="compass.svg">
+                    <img src="/img/compass.svg">
                 </div>
                 <div class="max-w-[500px] flex items-center px-4 pt-8 sm:pt-0">
                     <p class="text-xl">
