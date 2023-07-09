@@ -1,0 +1,47 @@
+name: Deploy
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+concurrency:
+  group: "production"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: production
+      url: "https://torchandzen.com/"
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Install Zola
+        run: sudo snap install --edge zola
+
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Build website
+        run: zola build
+
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$SSH_KEY" > ~/.ssh/server.key
+          chmod 600 ~/.ssh/server.key
+          cat >> ~/.ssh/config << EOF
+          Host torchandzen
+            HostName torchandzen.com
+            User deploy
+            IdentityFile ~/.ssh/server.key
+            StrictHostKeyChecking no
+          EOF
+        env:
+          SSH_KEY: ${{ secrets.SSH_KEY }}
+
+      - name: Sync changes
+        run: rsync -avz --progress --delete public/ torchandzen:/var/www/torchandzen
+
+      - name: Reload server
+        run: ssh torchandzen 'sudo systemctl reload caddy'
