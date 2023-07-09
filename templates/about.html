@@ -1,0 +1,54 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<main class="h-screen overflow-auto bg-salvo">
+    <header class="bg-white p-8">
+        <h1 class="text-4xl sm:text-5xl">
+            <a href="/" class="hover:underline">Torch&nbsp;and&nbsp;Zen</a>:
+            About
+        </h1>
+    </header>
+
+    <div class="flex flex-col sm:flex-row">
+        <div class="text-white max-w-[700px] p-8">
+            <h2 class="text-3xl sm:text-4xl mb-8">
+                Who’s organising this and why should we trust them?
+            </h2>
+            <p class="text-lg mb-8">
+                Theodore Keloglou is a software engineer with almost ten years
+                of professional experience, mostly in startups and small
+                companies across industries such as FinTech, Bio/Health-Tech,
+                DevTools, et al.
+            </p>
+            <p class="text-lg mb-8">
+                Over the last decade, he has organised a wide variety of events
+                and has been on the organising committee of conferences with
+                hundreds of attendees. He has coordinated numerous meetup
+                groups in multiple countries, on topics such as software
+                programming, but also photography, philosophy, civic technology.
+            </p>
+            <p class="text-lg mb-8">
+                He is a member of Chaitin School, a software engineering
+                community in London, England, the maker of mataroa.blog, a
+                privacy-first blogging platform, the founder of Laniakea Books,
+                a public domain publishing house, and an employee at Animorph
+                Co-op. His blog is at nutcroft.com
+            </p>
+            <p class="text-lg mb-8">
+                He looks like this:
+            </p>
+            <img src="/theo.jpg" width="300px" class="rounded-lg">
+        </div>
+
+        <div class="flex-1 flex justify-center items-end">
+            <div class="inline-block max-w-[500px]">
+                <img src="/rice-bowl.svg" width="1000px">
+            </div>
+        </div>
+
+        <div class="sm:hidden text-white p-8">
+            <a href="/">« Back to Home</a>
+        </div>
+    </div>
+</main>
+{% endblock content %}
