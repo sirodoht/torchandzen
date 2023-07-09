@@ -37,6 +37,7 @@
                         },
                         colors: {
                             clifford: '#da373d',
+                            salvo: '#22c1c3',
                         },
                     }
                 }
@@ -49,15 +50,17 @@
                 }
             }
         </style>
-
     </head>
     <body>
+        {% block content %}
 
         <header class="h-screen bg-gradient-radial from-teal-300 to-yellow-200 to-80%">
             <div class="h-screen py-4 flex justify-center items-center flex-col justify-between bg-contain bg-no-repeat bg-center bg-[url('zen-circle.svg')]">
                 <div></div>
 
-                <h1 class="font-semibold text-white text-5xl">Torch and Zen</h1>
+                <h1 class="font-semibold text-white pt-12 text-3xl sm:text-5xl">
+                    Torch and Zen
+                </h1>
                 
                 <div class="animate-bounce">
                     <a href="#home" class="text-teal-700 rotate-90 inline-block text-4xl">»</a>
@@ -65,76 +68,137 @@
             </div>
         </header>
 
-        <section class="bg-lime-100" id="home">
-            <p class="text-teal-700 text-5xl text-center leading-normal py-24">
-                <span class="text-teal-400">What?</span>
-                <br>
-                Spend 3 weeks building an AI product.
+        <section id="home" class="bg-lime-100 px-4 pt-20 pb-20 sm:pt-40 sm:pb-48">
+            <div class="text-center mb-8 sm:mb-16">
+                <div class="text-sm text-teal-700 uppercase border-2 border-teal-700 rounded inline-block px-2 py-1">
+                    What?
+                </div>
+            </div>
+            <p class="text-teal-700 text-3xl sm:text-5xl text-center leading-normal">
+                Spend 3 weeks building an AI&nbsp;product.
             </p>
         </section>
 
-        <section class="bg-teal-700 text-white py-24">
-            <p class="text-center text-5xl pb-24 leading-tight">
-                Torch and Zen will take place on
-                <br>8 April – 26 April 2024 in central London, UK
+        <section class="bg-teal-700 text-white pt-20 pb-24 sm:pt-32 sm:pb-40">
+            <div class="text-center mb-16">
+                <div class="text-sm uppercase border-2 border-white rounded inline-block px-2 py-1">
+                    Join us
+                </div>
+            </div>
+            <p class="text-center text-4xl sm:text-5xl leading-tight px-4">
+                <a href="" class="hover:underline">
+                    Submit your Product&nbsp;Plan</a>&nbsp;»
             </p>
-
-            <div class="w-[700px] mx-auto text-xl leading-normal">
-                <div class="mb-12 border-l-4 pl-3">
-                    <p>
-                        How much does it cost?
-                    </p>
-                    <p class="text-gray-300">
-                        £2,000 per person.
-                    </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center mt-8">
+                <div class="w-[150px] mr-8">
+                    <img src="compass.svg">
                 </div>
-
-                <div class="mb-12 border-l-4 pl-3">
-                    <p>
-                        Who is this for?
-                    </p>
-                    <p class="text-gray-300">
-                        This program is aimed at people who want to jumpstart making a product. It’s aimed at
-                        experienced programmers who know what to build and how to build.
-                    </p>
-                </div>
-
-                <div class="mb-12 border-l-4 pl-3">
-                    <p>
-                        How do I apply?
-                    </p>
-                    <p class="text-gray-300">
-                        You apply with a plan of what you are going to build. Your plan is like a budget. It doesn’t
-                        mean it will go as planned. It does mean though that you will try to make it go as planned.
-                    </p>
-                </div>
-
-                <div class="mb-12 border-l-4 pl-3">
-                    <p>
-                        Why would I come there if I can just build at home?
-                    </p>
-                    <p class="text-gray-300">
-                        We think the added advantages of our program are: 1. community: building with others means
-                        accountability — 2. structure: consistency is crucial to high quality work — 3. space: we think
-                        having a separate space for work is important — 4. feedback: from rubberducking to quick
-                        third-party feedback — 5. ethics: we’ll help you figure out the societal impact of what you’re
-                        building —6. zen: we hope to contribute to your inner calmness while working.
-                    </p>
-                </div>
-
-                <div class="mb-12 border-l-4 pl-3">
-                    <p>
-                        What’s with the name?
-                    </p>
-                    <p class="text-gray-300">
-                        PyTorch is the most popular deep learning library. Zen is a buddhist word that has come to mean
-                        deep calmness and inner peace. Building a product and a company easily become extremely
-                        stressful things. We aim to tackle that with morning meditation, daily community lunches, evening
-                        checkouts, and many other small things that we think are meaningful.
+                <div class="max-w-[500px] flex items-center px-4 pt-8 sm:pt-0">
+                    <p class="text-xl">
+                        To take part in Torch and Zen, you need to plan your
+                        time there. You will have 3 weeks. Treat them as your
+                        time budget. This will feel like making a bet. Make a
+                        bet that you will win.
                     </p>
                 </div>
             </div>
         </section>
 
+        <section class="pt-20 pb-4 sm:pt-24 sm:pb-16">
+            <div class="text-center mb-20 sm:mb-20">
+                <div class="text-sm text-teal-700 uppercase border-2 border-teal-700 rounded inline-block px-2 py-1">
+                    FAQ
+                </div>
+            </div>
+
+            <p class="text-center text-3xl sm:text-5xl mx-1 pb-24 leading-tight sm:leading-tight">
+                Torch and Zen will&nbsp;take&nbsp;place&nbsp;on
+                <br>8 April – 26 April 2024 in central London,&nbsp;UK
+            </p>
+
+            <div class="max-w-[700px] mx-auto text-xl leading-normal">
+                <div class="mb-12 border-l-4 border-gray-500 pl-3">
+                    <p>
+                        How much does it cost?
+                    </p>
+                    <p class="text-gray-400">
+                        £2,000 per person.
+                    </p>
+                </div>
+
+                <div class="mb-12 border-l-4 border-gray-500 pl-3">
+                    <p>
+                        Who is this for?
+                    </p>
+                    <p class="text-gray-400">
+                        This program is aimed at people who want to jumpstart
+                        making a product. It’s aimed at experienced programmers
+                        who know what to build and how to build.
+                    </p>
+                </div>
+
+                <div class="mb-12 border-l-4 border-gray-500 pl-3">
+                    <p>
+                        How do I apply?
+                    </p>
+                    <p class="text-gray-400">
+                        You apply with a plan of what you are going to build.
+                        Your plan is like a budget. It doesn’t mean it will go
+                        as planned. It does mean though that you will try to
+                        make it go as planned.
+                    </p>
+                </div>
+
+                <div class="mb-12 border-l-4 border-gray-500 pl-3">
+                    <p>
+                        Why would I come there if I can just build at home?
+                    </p>
+                    <p class="text-gray-400">
+                        We think the added advantages of our program are:
+                    </p>
+                    <ol class="text-gray-400 list-decimal pl-6">
+                        <li>community: building with others means accountability</li>
+                        <li>structure: consistency is crucial to high quality work</li>
+                        <li>space: we think having a separate space for work is important</li>
+                        <li>feedback: from rubberducking to quick third-party feedback</li>
+                        <li>ethics: we’ll help you figure out the societal impact of what you’re building</li>
+                        <li>zen: we hope to contribute to your inner calmness while working.</li>
+                    </ol>
+                </div>
+
+                <div class="mb-12 border-l-4 border-gray-500 pl-3">
+                    <p>
+                        What’s with the name?
+                    </p>
+                    <p class="text-gray-400">
+                        PyTorch is the most popular deep learning library. Zen
+                        is a buddhist word that has come to mean deep calmness
+                        and inner peace. Building a product and a company easily
+                        become extremely stressful things. We aim to tackle that
+                        with morning meditation, daily community lunches,
+                        evening checkouts, and many other small things that we
+                        think are meaningful.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-teal-700 text-white py-48">
+            <p class="text-center text-4xl sm:text-5xl leading-tight px-4">
+                <a href="" class="hover:underline">
+                    Submit your Product&nbsp;Plan</a>&nbsp;»
+            </p>
+        </section>
+
+        <footer class="text-gray-300 flex flex-col sm:flex-row place-content-between p-4">
+            <div>
+                CC0 Public Domain 2023-2024 Zermelo Fraenkel LTD
+            </div>
+            <div class="mt-4">
+                Make something people want only if you’ll enjoy offering it to them.
+            </div>
+        </footer>
+
+        {% endblock content %}
     </body>
 </html>
