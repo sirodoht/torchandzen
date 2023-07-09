@@ -1,0 +1,50 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<main class="h-screen overflow-auto bg-salvo">
+    <header class="bg-white p-8">
+        <h1 class="text-4xl sm:text-5xl text-center">
+            <a href="/" class="hover:underline">Torch&nbsp;and&nbsp;Zen</a>:
+            Schedule
+        </h1>
+    </header>
+
+    <div class="flex flex-col items-center">
+        <div class="text-white max-w-[700px] p-8">
+            <h2 class="text-3xl sm:text-4xl pb-4">
+                Every week
+            </h2>
+            <ul class="list-disc pl-6 text-xl leading-normal">
+                <li>Meditation: 8am - 9am</li>
+                <li>Breakfast: 9am - 10am</li>
+                <li>Focus block: 10am - 3pm</li>
+                <li>Lunch: 3pm - 4pm</li>
+                <li>Talks: 4pm - 5pm</li>
+                <li>Less focused work: 5pm - 7pm</li>
+            </ul>
+
+            <h2 class="text-3xl sm:text-4xl mt-8">
+                Week 1: 8&nbspApril&nbsp–&nbsp12&nbsp;April
+            </h2>
+
+            <h2 class="text-3xl sm:text-4xl mt-8">
+                Week 2: 15&nbspApril&nbsp–&nbsp19&nbsp;April
+            </h2>
+
+            <h2 class="text-3xl sm:text-4xl mt-8">
+                Week 3: 22&nbspApril&nbsp–&nbsp26&nbsp;April
+            </h2>
+        </div>
+
+        <div class="text-center">
+            <div class="inline-block max-w-[500px]">
+                <img src="/origami.svg" width="1000px">
+            </div>
+        </div>
+
+        <div class="sm:hidden text-white p-8">
+            <a href="/">« Back to Home</a>
+        </div>
+    </div>
+</main>
+{% endblock content %}
