@@ -1,24 +1,13 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
-  content: ["./templates/*.html"],
+  content: ['./templates/*.html'],
   theme: {
     extend: {
       fontFamily: {
         sans: [
-          '"Grenette Trial"',
-          'ui-sans-serif',
-          'system-ui',
-          '-apple-system',
-          'BlinkMacSystemFont',
-          '"Segoe UI"',
-          'Roboto',
-          '"Helvetica Neue"',
-          'Arial',
-          '"Noto Sans"',
-          'sans-serif',
-          '"Apple Color Emoji"',
-          '"Segoe UI Emoji"',
-          '"Segoe UI Symbol"',
-          '"Noto Color Emoji"',
+          '"Grenette Variable Proportional Pro"',
+          ...defaultTheme.fontFamily.sans,
         ],
       },
       backgroundImage: {

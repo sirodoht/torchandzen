@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Grenette font */
+@font-face {
+    font-family: 'Grenette Variable Proportional Pro';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/font/grenette-variable-proportional-pro.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Grenette Variable Italic Pro';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/font/grenette-variable-italic-pro.woff2') format('woff2');
+}
