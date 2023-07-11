@@ -2,16 +2,18 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="Torch and Zen is a 3-week software building program in London, UK">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Torch and Zen: Spend 3 weeks building an AI product</title>
-
         <link rel="stylesheet" href="/css/style.css">
-    </head>
-    <body>
-        {% block content %}
 
+        {% block meta %}
+        <meta name="description" content="Torch and Zen is a 3-week software building program in London, UK">
+        <title>Torch and Zen: Spend 3 weeks building an AI product</title>
+        {% endblock meta %}
+
+    </head>
+    <body class="{% block bodyclasslist %}{% endblock bodyclasslist %}">
+
+        {% block content %}
         <header class="h-[90vh] bg-gradient-radial from-teal-300 to-yellow-200 to-80%">
             <div class="h-[90vh] py-4 flex justify-center items-center flex-col justify-between bg-contain bg-no-repeat bg-center bg-[url('/img/zen-circle.svg')]">
                 <div></div>
@@ -45,7 +47,7 @@
             </div>
             <p class="text-center text-4xl sm:text-5xl leading-tight px-4">
                 <a href="" class="hover:underline">
-                    Submit your Product&nbsp;Plan</a>&nbsp;»
+                    Submit your <span class="underline">Product&nbsp;Plan</span></a>&nbsp;»
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center mt-8">
                 <div class="w-[150px] mr-8">
@@ -150,7 +152,7 @@
 
                 <div class="mb-12 border-l-4 border-gray-500 pl-3">
                     <p>
-                        Why does it cost £2k/person?
+                        Why does it cost that?
                     </p>
                     <p class="text-gray-400">
                         Our budget is open. See
@@ -205,7 +207,7 @@
         <section class="bg-teal-700 text-white py-48">
             <p class="text-center text-4xl sm:text-5xl leading-tight px-4">
                 <a href="" class="hover:underline">
-                    Submit your Product&nbsp;Plan</a>&nbsp;»
+                    Submit your <span class="underline">Product&nbsp;Plan</span></a>&nbsp;»
             </p>
         </section>
 
@@ -217,7 +219,7 @@
                 Make something you will enjoy offering.
             </div>
         </footer>
-
         {% endblock content %}
+
     </body>
 </html>

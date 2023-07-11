@@ -1,10 +1,17 @@
 {% extends 'index.html' %}
 
+{% block meta %}
+<meta name="description" content="Torch and Zen is a 3-week software building program in London, UK">
+<title>Torch and Zen: About</title>
+{% endblock meta %}
+
+{% block bodyclasslist %}bg-salvo{% endblock bodyclasslist %}
+
 {% block content %}
-<main class="h-screen overflow-auto bg-salvo">
+<main class="bg-salvo">
     <header class="bg-white p-8">
         <h1 class="text-4xl sm:text-5xl">
-            <a href="/" class="hover:underline">Torch&nbsp;and&nbsp;Zen</a>:
+            <a href="/" class="underline">Torch&nbsp;and&nbsp;Zen</a>:
             About
         </h1>
     </header>
@@ -51,7 +58,7 @@
             </div>
         </div>
 
-        <div class="sm:hidden text-white p-8">
+        <div class="sm:hidden text-white p-8 mb-16">
             <a href="/">« Back to Home</a>
         </div>
     </div>
