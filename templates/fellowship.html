@@ -1,0 +1,52 @@
+{% extends 'index.html' %}
+
+{% block meta %}
+<meta name="description" content="Torch and Zen is a 3-week software building program in London, UK">
+<title>Torch and Zen: Fellowship</title>
+{% endblock meta %}
+
+{% block bodyclasslist %}bg-salvo{% endblock bodyclasslist %}
+
+{% block content %}
+<main class="bg-salvo">
+    <header class="bg-white p-8">
+        <h1 class="text-4xl sm:text-5xl">
+            <a href="/" class="underline">Torch&nbsp;and&nbsp;Zen</a>:
+            Fellowship
+        </h1>
+    </header>
+
+    <div class="flex flex-col sm:flex-row">
+        <div class="text-white max-w-[700px] p-8">
+            <h2 class="text-3xl sm:text-4xl mb-8">
+                The Fellowship of Ku
+            </h2>
+            <p class="text-lg mb-8">
+                We don’t want to discriminate against poor people. For this
+                reason, we have reserved two spots for those who cannot
+                afford to pay the ticket fee.
+            </p>
+            <p class="text-lg mb-8">
+                To be considered, please send an email to
+                <a href="mailto:theo+fellowship@torchandzen.com" class="underline">theo+fellowship@torchandzen.com</a>.
+                We’d rather not judge whose poverty is worse. The process we’ll
+                follow is as follows. We’ll read all emails. We’ll verify as
+                much as possible of what is written to us. Then, we’ll assign
+                numbers to each mail, go to
+                <a href="https://www.random.org/integers/" class="underline">randon.org/integers</a>,
+                fill in the max value, and ask for two numbers.
+            </p>
+        </div>
+
+        <div class="flex-1 flex justify-center items-end">
+            <div class="inline-block max-w-[500px]">
+                <img src="/img/llama.svg" width="1000px">
+            </div>
+        </div>
+
+        <div class="sm:hidden text-white p-8 mb-16">
+            <a href="/">« Back to Home</a>
+        </div>
+    </div>
+</main>
+{% endblock content %}
