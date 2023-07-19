@@ -1,0 +1,105 @@
+{% extends 'index.html' %}
+
+{% block meta %}
+<title>Torch and Zen: Manual</title>
+{% endblock meta %}
+
+{% block bodyclasslist %}bg-white{% endblock bodyclasslist %}
+
+{% block content %}
+<main class="bg-salvo">
+    <header class="bg-white pt-28 px-8 pb-8">
+        <h1 class="text-4xl sm:text-5xl">
+            Manual
+        </h1>
+    </header>
+
+    <div class="flex flex-col sm:flex-row">
+        <div class="text-white max-w-[700px] px-8 pt-1">
+            <h2 class="text-2xl sm:text-3xl font-semibold sm:font-normal my-6">
+                How to: Torch and Zen
+            </h2>
+            <p class="text-lg mb-4">
+                This is the first time this event is taking place, so we will be
+                discovering how it works along with you!
+            </p>
+            <h2 class="text-2xl sm:text-3xl font-semibold sm:font-normal my-6">
+                Introduction
+            </h2>
+            <p class="text-lg mb-4">
+                Why are we doing this? In essence: we think it would be cool if there was a space where
+                people can do programming for fun.
+            </p>
+            <p class="text-lg mb-4">
+                Many spaces that exist only
+                accept the best, the most brilliant, the ones that will change
+                the world. We are, too, fans of excellence, yet we also believe
+                in space for experimentation. It is in such a playground that
+                opportunities to create something worthwhile will arise.
+            </p>
+
+            <h2 class="text-2xl sm:text-3xl font-semibold sm:font-normal my-6">
+                How to be nice
+            </h2>
+            <p class="text-lg mb-4">
+                The most important thing is to be nice. In other words, let’s
+                all be kind, highly empathetic, and understanding — everything
+                else will follow from there.
+            </p>
+            <p class="text-lg mb-4">
+                It can be hard to be nice. To make communicate niceness easier
+                we have codified it as much as we could! The first step is the
+                <a href="/coc/" class="underline">Code of Conduct</a>.
+                There, we outline what behaviour is ok and what behaviour is not
+                ok. Not ok behaviour is strictly not allowed in the space we
+                create.
+            </p>
+            <p class="text-lg mb-4">
+                The second step is a list of social rules. We get inspired from
+                Recurse Center’s list (see
+                <a href="https://www.recurse.com/manual#sub-sec-social-rules" class="underline">here</a>).
+                A great example is “no feigning surprise”. Feigning surprise is
+                when one acts surprised when people don’t know about something
+                that they do. Eg. “what?! you've never seen any movie of
+                Miyazaki?!”, or for something technical, eg. “what?! you’ve
+                never fine-tuned an llm?!”. It’s hard to make a comprehensive
+                list of all equally annoying things, but the above example
+                should serve as an indicative one. Basically: if it's behaviour
+                an average person would fine annoying, don’t do it.
+            </p>
+
+            <h2 class="text-2xl sm:text-3xl font-semibold sm:font-normal my-6">
+                Friends & Inspirations
+            </h2>
+            <p class="text-lg mb-4">
+                We are inspired by
+                <a href="Recurse Center" class="underline">Recurse Center</a>,
+                a 3-month retreat in NYC for
+                programmers who want to dedicate time into exploring new
+                knowledge.
+            </p>
+            <p class="text-lg mb-4">
+                We are inspired by
+                <a href="https://www.foundersandcoders.com/" class="underline">Founders and Coders</a>
+                a free coding bootcamp
+                in London that nurtures peer-to-peer learning environments for
+                all.
+            </p>
+            <p class="text-lg mb-4">
+                We are inspired by all those who organise hackathons and all
+                those who attend them.
+            </p>
+        </div>
+
+        <div class="flex-1 flex justify-center items-end">
+            <div class="inline-block max-w-[500px]">
+                <img src="/img/elephant.svg" width="1000px">
+            </div>
+        </div>
+
+        <div class="sm:hidden text-white p-8 mb-16">
+            <a href="/">« Back to Home</a>
+        </div>
+    </div>
+</main>
+{% endblock content %}
