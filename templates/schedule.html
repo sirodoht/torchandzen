@@ -1,25 +1,23 @@
 {% extends 'index.html' %}
 
 {% block meta %}
-<meta name="description" content="Torch and Zen is a 3-week AI software building program in London, UK">
-<title>Torch and Zen: About</title>
+<title>Torch and Zen: Schedule</title>
 {% endblock meta %}
 
-{% block bodyclasslist %}bg-salvo{% endblock bodyclasslist %}
+{% block bodyclasslist %}bg-white{% endblock bodyclasslist %}
 
 {% block content %}
 <main class="bg-salvo">
-    <header class="bg-white p-8">
-        <h1 class="text-4xl sm:text-5xl text-center">
-            <a href="/" class="underline">Torch&nbsp;and&nbsp;Zen</a>:
+    <header class="bg-white pt-28 px-8 pb-8">
+        <h1 class="text-4xl sm:text-5xl">
             Schedule
         </h1>
     </header>
 
-    <div class="flex flex-col items-center">
-        <div class="text-white max-w-[700px] p-8">
-            <h2 class="text-3xl sm:text-4xl pb-4">
-                Every week
+    <div class="flex flex-col sm:flex-row">
+        <div class="text-white max-w-[700px] px-8 pt-1">
+            <h2 class="text-2xl sm:text-3xl font-semibold sm:font-normal my-6">
+                Every day
             </h2>
             <ul class="list-disc pl-6 text-xl leading-normal">
                 <li>Meditation: 8am - 9am</li>
@@ -30,26 +28,30 @@
                 <li>Less focused work: 5pm - 7pm</li>
             </ul>
 
-            <h2 class="text-3xl sm:text-4xl mt-8">
-                Week 1: 8&nbspApril&nbsp–&nbsp12&nbsp;April
+            <h2 class="text-2xl sm:text-3xl font-semibold sm:font-normal my-6">
+                Day 1: Fri 15 Sep
             </h2>
 
-            <h2 class="text-3xl sm:text-4xl mt-8">
-                Week 2: 15&nbspApril&nbsp–&nbsp19&nbsp;April
+            <h2 class="text-2xl sm:text-3xl font-semibold sm:font-normal my-6">
+                Day 2: Sat 16 Sep
             </h2>
 
-            <h2 class="text-3xl sm:text-4xl mt-8">
-                Week 3: 22&nbspApril&nbsp–&nbsp26&nbsp;April
+            <h2 class="text-2xl sm:text-3xl font-semibold sm:font-normal my-6">
+                Day 3: Sun 17 Sep
+            </h2>
+
+            <h2 class="text-2xl sm:text-3xl font-semibold sm:font-normal my-6">
+                Day 4: Mon 18 Sep
             </h2>
         </div>
 
-        <div class="text-center">
+        <div class="flex-1 flex justify-center items-end">
             <div class="inline-block max-w-[500px]">
                 <img src="/img/origami.svg" width="1000px">
             </div>
         </div>
 
-        <div class="sm:hidden text-white p-8">
+        <div class="sm:hidden text-white p-8 mb-16">
             <a href="/">« Back to Home</a>
         </div>
     </div>
