@@ -15,6 +15,7 @@ module.exports = {
       },
       colors: {
         salvo: '#22c1c3',
+        kenen: '#417172',
       },
     }
   }
