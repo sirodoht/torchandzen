@@ -3,27 +3,51 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Torch and Zen is a 4-days AI software building program in London, UK">
         <link rel="stylesheet" href="/css/style.css">
 
         {% block meta %}
-        <meta name="description" content="Torch and Zen is a 3-week AI software building program in London, UK">
-        <title>Torch and Zen: Spend 3 weeks building an AI product</title>
+        <title>Torch and Zen: Spend 4 days building an AI product while being Zen.</title>
         {% endblock meta %}
 
     </head>
-    <body class="{% block bodyclasslist %}{% endblock bodyclasslist %}">
+    <body class="{% block bodyclasslist %}bg-gradient-to-r from-teal-200 to-yellow-100{% endblock bodyclasslist %}">
+        <nav class="fixed w-full bg-gradient-to-r from-teal-200 to-yellow-100">
+            <div class="flex flex-row items-center place-content-between py-2 sm:py-0 px-4 sm:px-0">
+                <a href="/" class="hidden sm:flex flex-row items-center">
+                    <div class="p-4">
+                        <img src="/img/zen-circle.svg" alt="zen circle" width="50px">
+                    </div>
+                    <div class="text-kenen text-2xl">
+                        Torch and Zen
+                    </div>
+                </a>
+                <div>
+                    <a class="text-kenen text-lg pr-2 sm:pr-4 hover:underline" href="/">Home</a>
+                    <a class="text-kenen text-lg pr-2 sm:pr-4 hover:underline" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScdCe9XWIwyYLP7sIAtjYAxE-6tV-Qj2Pd9S19cPiQ4JDdbig/viewform">Apply ↗</a>
+                    <a class="text-kenen text-lg pr-2 sm:pr-4 hover:underline" href="/coc/">Code of Conduct</a>
+                    <a class="text-kenen text-lg pr-2 sm:pr-4 hover:underline" href="/manual/">Manual</a>
+                    <a class="text-kenen text-lg pr-2 sm:pr-4 hover:underline" href="/schedule/">Schedule</a>
+                    <a class="text-kenen text-lg pr-2 sm:pr-4 hover:underline" href="/fellowship/">Fellowship</a>
+                    <a class="text-kenen text-lg pr-2 sm:pr-4 hover:underline" href="/about/">About</a>
+                </div>
+            </div>
+        </nav>
 
         {% block content %}
-        <header class="h-[90vh] bg-gradient-radial from-teal-300 to-yellow-200 to-80%">
-            <div class="h-[90vh] py-4 flex justify-center items-center flex-col justify-between bg-contain bg-no-repeat bg-center bg-[url('/img/zen-circle.svg')]">
-                <div></div>
-
-                <h1 class="font-normal sm:font-semibold text-white pt-12 text-3xl sm:text-5xl">
-                    Torch and Zen
-                </h1>
-
-                <div class="animate-bounce">
-                    <a href="#home" class="text-teal-700 rotate-90 inline-block text-4xl">»</a>
+        <header class="h-[700px] bg-gradient-to-r from-teal-300 to-yellow-200 flex justify-center items-center">
+            <div class="h-[300px] flex flex-col sm:flex-row justify-center items-center pt-16">
+                <div class="text-kenen sm:pr-24 text-center sm:text-left">
+                    <h1 class="font-semibold text-5xl sm:text-6xl mt-8">
+                        Torch and Zen
+                    </h1>
+                    <div class="text-2xl mt-4 mb-4 sm:mb-0 max-w-[400px]">
+                        Spend 4 days building an AI product
+                        while being Zen.
+                    </div>
+                </div>
+                <div>
+                    <img src="/img/zen-circle.svg" alt="zen circle" width="250px">
                 </div>
             </div>
         </header>
@@ -34,8 +58,18 @@
                     What?
                 </div>
             </div>
-            <p class="text-teal-700 text-3xl sm:text-5xl text-center leading-normal">
-                Spend 3 weeks building an AI&nbsp;product.
+            <p class="text-teal-700 text-2xl sm:text-5xl text-center leading-normal sm:leading-normal max-w-[1000px] m-auto">
+                <span class="bg-white/75">Join a bunch of people.</span>
+                <span>
+                    Learn by doing.
+                </span>
+                <span>
+                    Explore new technologies.
+                </span>
+                <span class="bg-white/75">Focus without distractions.</span>
+                <span>
+                    Work on something exciting.
+                </span>
             </p>
         </section>
 
@@ -46,8 +80,8 @@
                 </div>
             </div>
             <p class="text-center text-4xl sm:text-5xl leading-tight px-4">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScdCe9XWIwyYLP7sIAtjYAxE-6tV-Qj2Pd9S19cPiQ4JDdbig/viewform" class="hover:underline">
-                    Submit your <span class="underline">Product&nbsp;Plan</span></a>&nbsp;»
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScdCe9XWIwyYLP7sIAtjYAxE-6tV-Qj2Pd9S19cPiQ4JDdbig/viewform">
+                    Submit your <span class="underline">Excitement&nbsp;Plan</span></a>&nbsp;»
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center mt-8">
                 <div class="w-[150px] mr-8">
@@ -55,16 +89,16 @@
                 </div>
                 <div class="max-w-[500px] flex items-center px-4 pt-8 sm:pt-0">
                     <p class="text-xl">
-                        To take part in Torch and Zen, you need to plan your
-                        time there. You will have 3 weeks. Treat them as your
-                        time budget. This will feel like making a bet. Make a
-                        bet that you will win.
+                        To take part, you just need to figure out what you want to
+                        work on to stay excited while being there! You will have
+                        4 days. Treat them as your time budget which you spend
+                        on thinking and writing fun code!
                     </p>
                 </div>
             </div>
         </section>
 
-        <section class="pt-20 pb-4 sm:pt-24 sm:pb-16">
+        <section class="pt-20 pb-4 sm:pt-24 sm:pb-16 bg-white">
             <div class="text-center mb-20 sm:mb-20">
                 <div class="text-sm text-teal-700 uppercase border-2 border-teal-700 rounded inline-block px-2 py-1">
                     FAQ
@@ -72,22 +106,26 @@
             </div>
 
             <p class="text-center text-3xl sm:text-5xl mx-1 pb-24 leading-tight sm:leading-tight">
-                Torch and Zen will&nbsp;take&nbsp;place&nbsp;on
-                <br>8 April – 26 April 2024 in central London,&nbsp;UK
+                Torch and Zen will take&nbsp;place
+                <br>
+                15 – 18 September 2023
+                <br>
+                in Greenwich, London, UK
             </p>
 
             <div class="max-w-[700px] mx-auto text-lg sm:text-xl leading-normal">
                 <div class="mb-12 border-l-4 border-gray-500 pl-3">
                     <p>
-                        How do I join?
+                        What do I need to join?
                     </p>
-                    <p class="text-gray-400">
-                        You send us a plan of what you are going to build once
-                        at the program. Your plan is like a budget. It doesn’t
-                        mean it will go as planned. It does mean though that
-                        you will try to make it go as planned. Once we receive
-                        your plan, we send you an invoice.
-                    </p>
+                    <ol class="text-gray-400 list-decimal pl-6">
+                        <li>Figure out what you want to work on to stay excited during this event.</li>
+                        <li>
+                            Answer our questions in the
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScdCe9XWIwyYLP7sIAtjYAxE-6tV-Qj2Pd9S19cPiQ4JDdbig/viewform" class="underline">Excitement Plan</a>!
+                        </li>
+                        <li>Done!</li>
+                    </ol>
                 </div>
 
                 <div class="mb-12 border-l-4 border-gray-500 pl-3">
@@ -95,7 +133,29 @@
                         How much does it cost?
                     </p>
                     <p class="text-gray-400">
-                        £2,000 per person.
+                        £70 per person.
+                    </p>
+                </div>
+
+                <div class="mb-12 border-l-4 border-gray-500 pl-3">
+                    <p>
+                        Do I work alone or in teams?
+                    </p>
+                    <p class="text-gray-400">
+                        Teams are preferred! Invite your friends or make new
+                        friends at the event :D
+                    </p>
+                </div>
+
+                <div class="mb-12 border-l-4 border-gray-500 pl-3">
+                    <p>
+                        Where does it take place?
+                    </p>
+                    <p class="text-gray-400">
+                        We are very lucky to have access to the beautiful
+                        office of
+                        <a href="https://www.foundersandcoders.com/" class="underline">Founders and Coders</a>!
+                        Located at the Design District of North Greenwich, London, England.
                     </p>
                 </div>
 
@@ -104,55 +164,43 @@
                         Who is this for?
                     </p>
                     <p class="text-gray-400">
-                        This program is aimed at people who want to jumpstart
-                        making a product. It’s aimed at experienced programmers
-                        who know what to build and how to build.
+                        This event is aimed at people who are comfortable
+                        coding on their own and want to explore the new space
+                        of AI.
                     </p>
                 </div>
 
                 <div class="mb-12 border-l-4 border-gray-500 pl-3">
                     <p>
-                        Why would I come there if I can just build at home?
-                    </p>
-                    <p class="text-gray-400">
-                        We think the added advantages of our program are:
+                        Where is the Zen?
                     </p>
                     <ol class="text-gray-400 list-decimal pl-6">
-                        <li>community: building with others means accountability</li>
-                        <li>structure: consistency is crucial to high quality work</li>
-                        <li>space: we think having a separate space for work is important</li>
-                        <li>feedback: from rubberducking to quick third-party feedback</li>
-                        <li>ethics: we’ll help you figure out the societal impact of what you’re building</li>
-                        <li>zen: we hope to contribute to your inner calmness while working.</li>
+                        <li>Meditation every morning</li>
+                        <li>Lunch all together</li>
+                        <li>Daily check-ins with fellow attendees</li>
+                        <li>Daily check-outs and self-reflections</li>
+                        <li>Focus on one thing</li>
+                        <li>No distractions</li>
                     </ol>
                 </div>
 
                 <div class="mb-12 border-l-4 border-gray-500 pl-3">
                     <p>
-                        How many people will be there?
+                        When is it again?
                     </p>
                     <p class="text-gray-400">
-                        We aim to have 16 participants.
+                        Starts in the morning of Friday 15 September 2023 and
+                        finishes at 5pm on Monday 18 September. 4 full days of
+                        fun.
                     </p>
                 </div>
 
                 <div class="mb-12 border-l-4 border-gray-500 pl-3">
                     <p>
-                        Why 3 weeks?
+                        Is this an hackathon?
                     </p>
                     <p class="text-gray-400">
-                        We think it’s a good balance to dive deep into building
-                        something meaningful while also not going under.
-                    </p>
-                </div>
-
-                <div class="mb-12 border-l-4 border-gray-500 pl-3">
-                    <p>
-                        Is this an incubator?
-                    </p>
-                    <p class="text-gray-400">
-                        Yes, in the sense of helping new companies. No, in the
-                        sense of taking equity.
+                        Kind of!
                     </p>
                 </div>
 
@@ -161,18 +209,10 @@
                         Why does it cost that?
                     </p>
                     <p class="text-gray-400">
-                        Our budget is open. See
-                        <a href="https://docs.google.com/spreadsheets/d/1lgvIPMfUjRBv-CMosIWFabtdD0IuiPZ5kiZqY_u7XnY/edit?usp=sharing" class="underline">here</a>.
-                    </p>
-                </div>
-
-                <div class="mb-12 border-l-4 border-gray-500 pl-3">
-                    <p>
-                        Can I get a refund?
-                    </p>
-                    <p class="text-gray-400">
-                        Due to the physical nature of the event we cannot issue refunds unless the
-                        event does not happen.
+                        We want to cover food plus some other comforts. Our
+                        budget is open. See
+                        <a href="https://docs.google.com/spreadsheets/d/1lgvIPMfUjRBv-CMosIWFabtdD0IuiPZ5kiZqY_u7XnY/edit?usp=sharing" class="underline">here</a>
+                        for details.
                     </p>
                 </div>
 
@@ -192,11 +232,33 @@
                     <p class="text-gray-400">
                         PyTorch is the most popular deep learning library. Zen
                         is a buddhist word that has come to mean deep calmness
-                        and inner peace. Building a product and a company easily
-                        become extremely stressful things. We aim to tackle that
-                        with morning meditation, daily community lunches,
-                        evening checkouts, and many other small things that we
-                        think are meaningful.
+                        and inner peace.
+                    </p>
+                </div>
+
+                <div class="mb-12 border-l-4 border-gray-500 pl-3">
+                    <p>
+                        Can I help shape this event?
+                    </p>
+                    <p class="text-gray-400">
+                        Great question, so glad you asked it! You can apply
+                        for a Fellowship. If you become a Fellow then you
+                        help us improve the event with your ideas. Basically you
+                        help us make this thing and in return you don't have to
+                        pay for a ticket.
+                    </p>
+                </div>
+
+                <div class="mb-12 border-l-4 border-gray-500 pl-3">
+                    <p>
+                        Why are you doing this?
+                    </p>
+                    <p class="text-gray-400">
+                        We think it would be fun if there was a space where
+                        people can do programming without the oppression of
+                        having to be the best or to change the world. We still
+                        value excellence and usefulness highly — but we also
+                        reserve space for empathy and kindness.
                     </p>
                 </div>
 
@@ -206,10 +268,8 @@
                     </p>
                     <p class="text-gray-400">
                         Do you think you will have fun participating? Do you
-                        think you will enjoy your time at the program? If so,
-                        then please join! Given that you can afford it—if not,
-                        apply for a
-                        <a href="/fellowship/" class="underline">fellowship</a>.
+                        think you will enjoy spending time here? If so, then
+                        please join!
                     </p>
                 </div>
             </div>
@@ -217,17 +277,18 @@
 
         <section class="bg-teal-700 text-white py-48">
             <p class="text-center text-4xl sm:text-5xl leading-tight px-4">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScdCe9XWIwyYLP7sIAtjYAxE-6tV-Qj2Pd9S19cPiQ4JDdbig/viewform" class="hover:underline">
-                    Submit your <span class="underline">Product&nbsp;Plan</span></a>&nbsp;»
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScdCe9XWIwyYLP7sIAtjYAxE-6tV-Qj2Pd9S19cPiQ4JDdbig/viewform">
+                    Fill in your » <span class="underline">Excitement&nbsp;Plan</span></a>&nbsp;»
+                I’m excited!
             </p>
         </section>
 
-        <footer class="text-gray-300 flex flex-col sm:flex-row place-content-between p-4">
+        <footer class="bg-white/50 text-gray-400 flex flex-col sm:flex-row place-content-between p-4">
             <div>
-                CC0 Public Domain 2023-2024 Zermelo Fraenkel LTD
+                CC0 Public Domain 2023 Zermelo Fraenkel LTD
             </div>
             <div class="mt-4 sm:mt-0">
-                Make something you will enjoy offering.
+                Make something you will enjoy doing.
             </div>
         </footer>
         {% endblock content %}
