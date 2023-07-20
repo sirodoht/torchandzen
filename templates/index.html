@@ -35,13 +35,29 @@
         </nav>
 
         {% block content %}
-        <header class="h-[700px] bg-gradient-to-r from-teal-300 to-yellow-200 flex justify-center items-center">
-            <div class="h-[300px] flex flex-col sm:flex-row justify-center items-center pt-16">
-                <div class="text-kenen sm:pr-24 text-center sm:text-left">
-                    <h1 class="font-semibold text-5xl sm:text-6xl mt-8">
+        <header class="lg:hidden bg-gradient-to-r from-teal-300 to-yellow-200 flex justify-center items-center pt-32">
+            <div class="flex flex-col justify-center items-center">
+                <div>
+                    <img src="/img/zen-circle.svg" alt="zen circle" width="250px">
+                </div>
+                <div class="text-kenen text-center">
+                    <h1 class="font-semibold text-5xl mt-8">
                         Torch and Zen
                     </h1>
-                    <div class="text-2xl mt-4 mb-4 sm:mb-0 max-w-[400px]">
+                    <div class="text-2xl mt-4 mb-16 max-w-[400px]">
+                        Spend 4 days building an AI product
+                        while being Zen.
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="hidden h-[700px] bg-gradient-to-r from-teal-300 to-yellow-200 lg:flex justify-center items-center">
+            <div class="h-[300px] flex flex-row justify-center items-center pt-16">
+                <div class="text-kenen pr-24 text-left">
+                    <h1 class="font-semibold text-6xl mt-8">
+                        Torch and Zen
+                    </h1>
+                    <div class="text-2xl mt-4 mb-0 max-w-[400px]">
                         Spend 4 days building an AI product
                         while being Zen.
                     </div>
