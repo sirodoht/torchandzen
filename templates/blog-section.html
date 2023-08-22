@@ -1,0 +1,41 @@
+{% extends 'index.html' %}
+
+{% block meta %}
+<title>Torch and Zen: Blog</title>
+<meta name="description" content="Join a bunch of people. Learn by doing. Explore new technologies. Focus without distractions. Work on something exciting.">
+<meta property="og:title" content="Torch and Zen: Spend 4 days building AI while being Zen.">
+<meta property="og:description" content="Join a bunch of people. Learn by doing. Explore new technologies. Focus without distractions. Work on something exciting.">
+{% endblock meta %}
+
+{% block bodyclasslist %}bg-white{% endblock bodyclasslist %}
+
+{% block content %}
+<main class="bg-salvo">
+    <header class="bg-white pt-28 px-8 pb-8">
+        <h1 class="text-4xl sm:text-5xl">
+            Blog
+        </h1>
+    </header>
+
+    <div class="flex flex-col md:flex-row">
+        <div class="text-white max-w-[700px] px-8 pt-1 pb-2">
+            {% for page in section.pages %}
+            <div class="my-6">
+                <a href="{{ page.permalink }}" class="underline text-2xl sm:text-3xl font-semibold sm:font-normal my-6">
+                    {{ page.title }}</a>
+
+                <time class="ml-2" datetime="{{ page.date | date(format="%+") }}" itemprop="datePublished">
+                    {{ page.date }}
+                </time>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="flex-1 flex justify-center items-center mt-8">
+            <div class="inline-block max-w-[500px] min-w-[250px]">
+                <img src="/img/elephant.svg" width="1000px">
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock content %}
