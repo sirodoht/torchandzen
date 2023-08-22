@@ -10,14 +10,14 @@ are always considered rare — we can’t escape living in an economy after all.
 Yet can we escape stress?
 
 This is where our quest starts. We are looking for something, maybe it's a
-theory or philosophy, maybe a practice — whatever  it is, our goal is to find a
+theory or philosophy, maybe a practice — whatever it is, our goal is to find a
 way to build software in calmness.
 
-One of the most seminal books in the West on Zen Buddhism is _Zen Mind,
-Beginner's Mind_, by Shunryū Suzuki, the founder of the San Francisco Zen Centre
+One of the seminal books of Zen Buddhism in the West is _Zen Mind,
+Beginner's Mind_, by Shunryū Suzuki, the founder of San Francisco Zen Centre
 and of Tassajara Zen Mountain Center, the first Zen Buddhist monastery in the
 West. While reading this book, in addition to calmness and peace, I identified
-many ideas and practices — more than I imagined — that I already know they are
+many ideas and practices — more than I imagined — that I already know are
 conducive to high quality software making.
 
 > "In the beginner's mind there are many possibilities, in the expert's mind
@@ -30,7 +30,7 @@ they expect anything. Yet an expert is limited. There are very few unknown
 unknowns in the mind of an expert. In software, it's extremely rare that all
 unknowns are known. Adding to software’s inherent complexity, our industry is
 developing so fast that the beginner's mind is not only a good practice, but
-possible even be a required one.
+possible even a required one.
 
 > “If your practice is good, you may become proud of it. What you do is good,
 but something more is added to it. Pride is extra. Right effort is to get rid of
