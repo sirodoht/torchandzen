@@ -88,7 +88,9 @@ is all about zazen, the meditation practice in which one just sits. No intricate
 theories or abstractions, no arguments or explanations, nothing complicated;
 only one thing that cannot get more obvious: just sit.
 
-In four weeks we’ll be taking part at _Torch and Zen_ with the intention of
-building high quality machine learning software while escaping stress. We’ll be
-doing just that and nothing else. This might be a high bar but just like Shunryū teaches us, we
-don’t plan to become discouraged if we fail to reach it.
+In four weeks, Friday 15 September, we’ll be participating at
+<a href="https://torchandzen.com/" class="underline">Torch and Zen</a>
+with the intention of building high quality machine learning-enabled software
+while escaping stress. We’ll be doing just that and nothing else. This will be
+challenging but let’s follow Shunryū’s tenets and not get discouraged if we
+fail.
