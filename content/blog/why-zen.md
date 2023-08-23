@@ -30,7 +30,7 @@ they expect anything. Yet an expert is limited. There are very few unknown
 unknowns in the mind of an expert. In software, it's extremely rare that all
 unknowns are known. Adding to software’s inherent complexity, our industry is
 developing so fast that the beginner's mind is not only a good practice, but
-possible even a required one.
+possibly even a required one.
 
 > “If your practice is good, you may become proud of it. What you do is good,
 but something more is added to it. Pride is extra. Right effort is to get rid of
@@ -88,9 +88,9 @@ is all about zazen, the meditation practice in which one just sits. No intricate
 theories or abstractions, no arguments or explanations, nothing complicated;
 only one thing that cannot get more obvious: just sit.
 
-In four weeks, Friday 15 September, we’ll be participating at
+In a bit more than three weeks, Friday 15 September, we’ll be participating at
 <a href="https://torchandzen.com/" class="underline">Torch and Zen</a>
 with the intention of building high quality machine learning-enabled software
-while escaping stress. We’ll be doing just that and nothing else. This will be
+while escaping stress. We’ll be doing just that and nothing else. It will be
 challenging but let’s follow Shunryū’s tenets and not get discouraged if we
 fail.
