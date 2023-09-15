@@ -22,6 +22,11 @@
         @apply mb-4 text-lg;
     }
 
+    ul,
+    ol {
+        @apply mb-4 text-lg;
+    }
+
     blockquote {
         @apply mb-4 px-4 py-1 border-l-4 bg-kenen/25;
     }
